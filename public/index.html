@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ngMovies</title>
+  <link rel="stylesheet" href="lib/normalize-css/normalize.css">
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/angular-material-icons/angular-material-icons.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="lib/angular-material-icons/angular-material-icons.js"></script>
+  <script src="app.module.js"></script>
+  <script src="movies/movies.controller.js"></script>
+  <script src="movies/movies.factory.js"></script>
+  <script src="movies/movieCard.directive.js"></script>
+  <script src="shows/shows.controller.js"></script>
+  <script src="people/people.controller.js"></script>
+  <script src="app.routes.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <div class="navbar-brand brand">
+          <ng-md-icon icon="settings_input_antenna" size="30" class="brand-icon"></ng-md-icon>
+          <span>ngMovies</span>
+        </div>
+      </div>
+      <ul class="nav navbar-nav">
+        <li>
+          <a ui-sref="movies">
+            <ng-md-icon icon="local_movies" class="icon"></ng-md-icon>
+            <span>Movies</span>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="shows">
+            <ng-md-icon icon="tv" class="icon"></ng-md-icon>
+            <span>Shows</span>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="people">
+            <ng-md-icon icon="people" class="icon"></ng-md-icon>
+            <span>People</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div ui-view class="container"></div>
+</body>
+
+</html>

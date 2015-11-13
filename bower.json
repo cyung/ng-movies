@@ -1,0 +1,26 @@
+{
+  "name": "ng-viewer",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Christopher Yung <cyung10892@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cyung/ng-movies",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.15",
+    "angular-bootstrap": "~0.14.3",
+    "bootstrap": "~3.3.5",
+    "normalize-css": "normalize.css#~3.0.3",
+    "angular-material-icons": "~0.6.0"
+  }
+}

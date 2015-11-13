@@ -1,0 +1,114 @@
+$primary: #616161;
+$primaryDark: #9E9E9E;
+$primaryLight: #F5F5F5;
+$textIcons: #212121;
+$accent: #FFC107;
+$textPrimary: #212121;
+$textSecondary: #727272;
+$divider: #B6B6B6;
+$display: 'Raleway';
+$type: 'Open Sans';
+
+/*==============================
+=            NAVBAR            =
+==============================*/
+
+.navbar {
+  background-color: $primary;
+  border: none;
+  border-radius: 0;
+}
+
+.nav {
+  li {
+    a {
+      font-family: $display;
+      font-size: 24px;
+      color: #FFF !important;
+    }
+  }
+}
+
+.brand {
+  font-family: $display;
+  font-size: 30px;
+  color: #FFF !important;
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.icon {
+  margin-top: -5px;
+}
+
+.brand-icon {
+  margin-top: -12px;
+  margin-right: 3px;
+}
+
+/*==============================
+=            HEADER            =
+==============================*/
+
+.page-header {
+  font-family: $display;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+/*==================================
+=            MOVIE CARD            =
+==================================*/
+
+.movie-card {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.movie-card-image {
+  height: 100px;
+  width: 100px;
+}
+
+.image-container {
+}
+
+.info-container {
+  padding: 0 20px;
+  flex-grow: auto;
+
+}
+
+.info-title {
+  font-family: $display;
+  font-size: 30px;
+  word-wrap: break-word;
+}
+
+.info-description {
+  font-family: $type;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding-top: 15px;
+}
+
+.rating-icon {
+  display: block;
+  margin: 0;
+  align-self: center;
+}
+
+.rating-number {
+  font-family: $type;
+  font-size: 14px;
+  align-self: center;
+}

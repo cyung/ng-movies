@@ -1,0 +1,6 @@
+config.json
+*.css.map
+node_modules
+public/lib
+.sass-cache
+.DS_Store
